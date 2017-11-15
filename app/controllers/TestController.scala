@@ -23,13 +23,17 @@ import scala.concurrent.duration._
 @Singleton
 class TestController @Inject()(cc: ControllerComponents) extends AbstractController(cc){
 
-  val configFile = getClass.getClassLoader.getResource("myConfig.conf").getFile
-  val config = ConfigFactory.parseFile(new File(configFile))
+  val system: ActorSystem = ActorSystem("mainSystem", ConfigFactory.load("myConfig.conf").withFallback(ConfigFactory.load()))
 
-  val system: ActorSystem = ActorSystem("mainSystem", config)
+//  val configFile = getClass.getClassLoader.getResource("myConfig.conf").getFile
+//  val config = ConfigFactory.parseFile(new File(configFile))
+//println(system)//.play.filters.hosts.allowed)
+ // val system: ActorSystem = ActorSystem("mainSystem", config)
 
   val hello : ActorRef = system.actorOf(Props[Hello])
   println(s"normal Actor reference is $hello")
+//val router2 : ActorRef = system.actorOf(Props[Hello])
+//val router1 : ActorRef = system.actorOf(Props[Hello])
 
   val router1: ActorRef = system.actorOf(FromConfig.props(Props[Hello]).withDispatcher("my-dispatcher"), "router1")
   println(s"Router1 reference is $router1")
@@ -37,7 +41,7 @@ class TestController @Inject()(cc: ControllerComponents) extends AbstractControl
   //val router2: ActorRef = system.actorOf(FromConfig.props(Props[Hello]), "router2")
 
   //remote router
-  val router2: ActorSelection = system.actorSelection("akka.tcp://remoteSystem@127.0.0.1:9003/user/remoteRouter")
+  val router2: ActorSelection = system.actorSelection("akka.tcp://remoteSystem@10.100.65.234:9001/user/remoteRouter")
   println(s"Router2 reference is $router2")
 
   def normal = Action.async {
