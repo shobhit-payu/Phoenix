@@ -16,3 +16,12 @@
 
 2017-11-20 16:13:06,849 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-6 - Application started (Dev)
 2017-11-20 16:13:06,851 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - application.conf @ file:/Library/WebServer/Documents/scala/payu2.0/Phoenix/payu2.0/target/scala-2.12/classes/application.conf: 43: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-11-20 16:18:39,942 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-25 - application.conf @ file:/Library/WebServer/Documents/scala/payu2.0/Phoenix/payu2.0/target/scala-2.12/classes/application.conf: 43: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-11-20 16:18:40,105 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-25 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2017-11-20 16:18:40,106 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-25 - Application started (Dev)
+2017-11-20 16:18:40,110 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-25 - application.conf @ file:/Library/WebServer/Documents/scala/payu2.0/Phoenix/payu2.0/target/scala-2.12/classes/application.conf: 43: play.crypto.secret is deprecated, use play.http.secret.key instead
