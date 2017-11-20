@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="testscala"
+		module="testscala$sources_2.11"
+		revision="1.0-SNAPSHOT"
+		conf="runtime"
+		confs="universal, universal-docs, universal-src, compile, runtime, test, provided, optional, windows, docker, linux, rpm, debian, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20171120152758"/>
+	<dependencies>
+		<module organisation="com.typesafe.play" name="play-jdbc_2.11">
+			<revision name="2.6.5" status="release" pubdate="20170915033402" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="53">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4219" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc_2.11/2.6.5/play-jdbc_2.11-2.6.5.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-jdbc_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="13945" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/srcs/play-jdbc_2.11-2.6.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc_2.11/2.6.5/play-jdbc_2.11-2.6.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.zaxxer" name="HikariCP">
+			<revision name="2.7.1" status="release" pubdate="20170908005837" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/brettwooldridge/HikariCP" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="59">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7967" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.zaxxer/HikariCP/ivy-2.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/zaxxer/HikariCP/2.7.1/HikariCP-2.7.1.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.7.1" rev-constraint-default="2.7.1" rev-constraint-dynamic="2.7.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="HikariCP" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="74318" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.zaxxer/HikariCP/srcs/HikariCP-2.7.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/zaxxer/HikariCP/2.7.1/HikariCP-2.7.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.jolbox" name="bonecp">
+			<revision name="0.8.0.RELEASE" status="release" pubdate="20131023171844" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="52">
+				<license name="Apache v2" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="8118" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.jolbox/bonecp/ivy-0.8.0.RELEASE.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jolbox/bonecp/0.8.0.RELEASE/bonecp-0.8.0.RELEASE.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="0.8.0.RELEASE" rev-constraint-default="0.8.0.RELEASE" rev-constraint-dynamic="0.8.0.RELEASE" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="bonecp" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="101324" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.jolbox/bonecp/srcs/bonecp-0.8.0.RELEASE-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/jolbox/bonecp/0.8.0.RELEASE/bonecp-0.8.0.RELEASE-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-logback_2.11">
+			<revision name="2.6.5" status="release" pubdate="20170915033358" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="31">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3082" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-logback_2.11/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-logback_2.11/2.6.5/play-logback_2.11-2.6.5.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-logback_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="5877" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-logback_2.11/srcs/play-logback_2.11-2.6.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-logback_2.11/2.6.5/play-logback_2.11-2.6.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-jdbc-api_2.11">
+			<revision name="2.6.5" status="release" pubdate="20170915033324" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2808" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-api_2.11/2.6.5/play-jdbc-api_2.11-2.6.5.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-jdbc-api_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="5495" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-jdbc-api_2.11/srcs/play-jdbc-api_2.11-2.6.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-jdbc-api_2.11/2.6.5/play-jdbc-api_2.11-2.6.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-remote_2.11">
+			<revision name="2.5.6" status="release" pubdate="20170929195457" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.6" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="23">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4420" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/ivy-2.5.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.11/2.5.6/akka-remote_2.11-2.5.6.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.5.6" rev-constraint-default="2.5.6" rev-constraint-dynamic="2.5.6" callerrev="1.0-SNAPSHOT" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.6"/>
+				<artifacts>
+					<artifact name="akka-remote_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="327549" time="1725" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.akka/akka-remote_2.11/srcs/akka-remote_2.11-2.5.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-remote_2.11/2.5.6/akka-remote_2.11-2.5.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.aeron" name="aeron-driver">
+			<revision name="1.3.0" status="release" pubdate="20170514100938" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/real-logic/Aeron" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="51">
+				<license name="The Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3067" time="0" location="/Users/hemant.agrawal/.ivy2/cache/io.aeron/aeron-driver/ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/aeron/aeron-driver/1.3.0/aeron-driver-1.3.0.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="aeron-driver" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="169454" time="1413" location="/Users/hemant.agrawal/.ivy2/cache/io.aeron/aeron-driver/srcs/aeron-driver-1.3.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/aeron/aeron-driver/1.3.0/aeron-driver-1.3.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.aeron" name="aeron-client">
+			<revision name="1.3.0" status="release" pubdate="20170514100926" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/real-logic/Aeron" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+				<license name="The Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3063" time="0" location="/Users/hemant.agrawal/.ivy2/cache/io.aeron/aeron-client/ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/aeron/aeron-client/1.3.0/aeron-client-1.3.0.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="aeron-client" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="111352" time="1413" location="/Users/hemant.agrawal/.ivy2/cache/io.aeron/aeron-client/srcs/aeron-client-1.3.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/aeron/aeron-client/1.3.0/aeron-client-1.3.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.agrona" name="agrona">
+			<revision name="0.9.6" status="release" pubdate="20170514094532" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/real-logic/Agrona" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="43">
+				<license name="The Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2893" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.agrona/agrona/ivy-0.9.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/agrona/agrona/0.9.6/agrona-0.9.6.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="0.9.6" rev-constraint-default="0.9.6" rev-constraint-dynamic="0.9.6" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="agrona" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="211107" time="1742" location="/Users/hemant.agrawal/.ivy2/cache/org.agrona/agrona/srcs/agrona-0.9.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/agrona/agrona/0.9.6/agrona-0.9.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty">
+			<revision name="3.10.6.Final" status="release" pubdate="20160629181528" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://netty.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="7197" time="0" location="/Users/hemant.agrawal/.ivy2/cache/io.netty/netty/ivy-3.10.6.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty/3.10.6.Final/netty-3.10.6.Final.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="3.10.6.Final" rev-constraint-default="3.10.6.Final" rev-constraint-dynamic="3.10.6.Final" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="netty" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1132389" time="1986" location="/Users/hemant.agrawal/.ivy2/cache/io.netty/netty/srcs/netty-3.10.6.Final-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty/3.10.6.Final/netty-3.10.6.Final-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-stream_2.11">
+			<revision name="2.5.6" status="release" pubdate="20170929195318" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.6" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3503" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/ivy-2.5.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.11/2.5.6/akka-stream_2.11-2.5.6.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.5.6" rev-constraint-default="2.5.6" rev-constraint-dynamic="2.5.6" callerrev="1.0-SNAPSHOT" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.6"/>
+				<artifacts>
+					<artifact name="akka-stream_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="475486" time="1467" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/srcs/akka-stream_2.11-2.5.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.11/2.5.6/akka-stream_2.11-2.5.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-actor_2.11">
+			<revision name="2.5.6" status="release" pubdate="20170929195131" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.6" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="38">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3100" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/ivy-2.5.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.5.6/akka-actor_2.11-2.5.6.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.5.6" rev-constraint-default="2.5.6" rev-constraint-dynamic="2.5.6" callerrev="1.0-SNAPSHOT" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.6"/>
+				<artifacts>
+					<artifact name="akka-actor_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="520517" time="1785" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/srcs/akka-actor_2.11-2.5.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.5.6/akka-actor_2.11-2.5.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.3.1" status="release" pubdate="20160924182320" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="70">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2875" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe/config/ivy-1.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.1/config-1.3.1.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="config" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="170512" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe/config/srcs/config-1.3.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.1/config-1.3.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-protobuf_2.11">
+			<revision name="2.5.6" status="release" pubdate="20170929195231" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.6" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2808" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.akka/akka-protobuf_2.11/ivy-2.5.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-protobuf_2.11/2.5.6/akka-protobuf_2.11-2.5.6.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.5.6" rev-constraint-default="2.5.6" rev-constraint-dynamic="2.5.6" callerrev="1.0-SNAPSHOT" extra-info.apiURL="http://doc.akka.io/api/akka/2.5.6"/>
+				<artifacts>
+					<artifact name="akka-protobuf_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="275261" time="3725" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.akka/akka-protobuf_2.11/srcs/akka-protobuf_2.11-2.5.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-protobuf_2.11/2.5.6/akka-protobuf_2.11-2.5.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="filters-helpers_2.11">
+			<revision name="2.6.5" status="release" pubdate="20170915033458" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="16">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3326" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/filters-helpers_2.11/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/filters-helpers_2.11/2.6.5/filters-helpers_2.11-2.6.5.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="filters-helpers_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="45727" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/filters-helpers_2.11/srcs/filters-helpers_2.11-2.6.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/filters-helpers_2.11/2.6.5/filters-helpers_2.11-2.6.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-ahc-ws_2.11">
+			<revision name="2.6.5" status="release" pubdate="20170915033441" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="21">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3930" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-ahc-ws_2.11/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-ahc-ws_2.11/2.6.5/play-ahc-ws_2.11-2.6.5.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-ahc-ws_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="20206" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-ahc-ws_2.11/srcs/play-ahc-ws_2.11-2.6.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-ahc-ws_2.11/2.6.5/play-ahc-ws_2.11-2.6.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-ahc-ws-standalone_2.11">
+			<revision name="1.1.0" status="release" pubdate="20170913052138" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-ws" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="60">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4761" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-ahc-ws-standalone_2.11/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-ahc-ws-standalone_2.11/1.1.0/play-ahc-ws-standalone_2.11-1.1.0.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-ahc-ws-standalone_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="53575" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-ahc-ws-standalone_2.11/srcs/play-ahc-ws-standalone_2.11-1.1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-ahc-ws-standalone_2.11/1.1.0/play-ahc-ws-standalone_2.11-1.1.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="shaded-oauth">
+			<revision name="1.1.0" status="release" pubdate="20170913052127" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-ws" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2496" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/shaded-oauth/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/shaded-oauth/1.1.0/shaded-oauth-1.1.0.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="shaded-oauth" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="253" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/shaded-oauth/srcs/shaded-oauth-1.1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/shaded-oauth/1.1.0/shaded-oauth-1.1.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="shaded-asynchttpclient">
+			<revision name="1.1.0" status="release" pubdate="20170913052141" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-ws" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2526" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/shaded-asynchttpclient/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/shaded-asynchttpclient/1.1.0/shaded-asynchttpclient-1.1.0.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="shaded-asynchttpclient" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="260" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/shaded-asynchttpclient/srcs/shaded-asynchttpclient-1.1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/shaded-asynchttpclient/1.1.0/shaded-asynchttpclient-1.1.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="cachecontrol_2.11">
+			<revision name="1.1.2" status="release" pubdate="20170201020148" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/cachecontrol" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3517" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/cachecontrol_2.11/ivy-1.1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/cachecontrol_2.11/1.1.2/cachecontrol_2.11-1.1.2.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.1.2" rev-constraint-default="1.1.2" rev-constraint-dynamic="1.1.2" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="cachecontrol_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="27458" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/cachecontrol_2.11/srcs/cachecontrol_2.11-1.1.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/cachecontrol_2.11/1.1.2/cachecontrol_2.11-1.1.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.joda" name="joda-convert">
+			<revision name="1.7" status="release" pubdate="20140804200718" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-convert/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="42">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6252" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.joda/joda-convert/ivy-1.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.7/joda-convert-1.7.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.7" rev-constraint-default="1.7" rev-constraint-dynamic="1.7" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="joda-convert" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="40304" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.joda/joda-convert/srcs/joda-convert-1.7-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.7/joda-convert-1.7-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-ws_2.11">
+			<revision name="2.6.5" status="release" pubdate="20170915033413" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="68">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4146" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-ws_2.11/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-ws_2.11/2.6.5/play-ws_2.11-2.6.5.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-ws_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="11344" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-ws_2.11/srcs/play-ws_2.11-2.6.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-ws_2.11/2.6.5/play-ws_2.11-2.6.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-ws-standalone-xml_2.11">
+			<revision name="1.1.0" status="release" pubdate="20170913052150" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-ws" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="55">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4001" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-ws-standalone-xml_2.11/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone-xml_2.11/1.1.0/play-ws-standalone-xml_2.11-1.1.0.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-ws-standalone-xml_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4837" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-ws-standalone-xml_2.11/srcs/play-ws-standalone-xml_2.11-1.1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone-xml_2.11/1.1.0/play-ws-standalone-xml_2.11-1.1.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-ehcache_2.11">
+			<revision name="2.6.5" status="release" pubdate="20170915033512" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="11">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3501" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-ehcache_2.11/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-ehcache_2.11/2.6.5/play-ehcache_2.11-2.6.5.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-ehcache_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="5520" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-ehcache_2.11/srcs/play-ehcache_2.11-2.6.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-ehcache_2.11/2.6.5/play-ehcache_2.11-2.6.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ehcache" name="jcache">
+			<revision name="1.0.1" status="release" pubdate="20141205210412" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4607" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.ehcache/jcache/ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ehcache/jcache/1.0.1/jcache-1.0.1.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jcache" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="27027" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.ehcache/jcache/srcs/jcache-1.0.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ehcache/jcache/1.0.1/jcache-1.0.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.cache" name="cache-api">
+			<revision name="1.0.0" status="release" pubdate="20140328090442" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/jsr107/jsr107spec" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="46">
+				<license name="JSR-000107 JCACHE 2.9 Public Review - Updated Specification                 License             " url="https://raw.github.com/jsr107/jsr107spec/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="4067" time="0" location="/Users/hemant.agrawal/.ivy2/cache/javax.cache/cache-api/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/cache/cache-api/1.0.0/cache-api-1.0.0.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="cache-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="84172" time="0" location="/Users/hemant.agrawal/.ivy2/cache/javax.cache/cache-api/srcs/cache-api-1.0.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/cache/cache-api/1.0.0/cache-api-1.0.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sf.ehcache" name="ehcache">
+			<revision name="2.10.4" status="release" pubdate="20170418044324" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://ehcache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
+				<license name="The Apache Software License, Version 2.0" url="src/assemble/EHCACHE-CORE-LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="14584" time="0" location="/Users/hemant.agrawal/.ivy2/cache/net.sf.ehcache/ehcache/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sf/ehcache/ehcache/2.10.4/ehcache-2.10.4.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="ehcache" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3879231" time="0" location="/Users/hemant.agrawal/.ivy2/cache/net.sf.ehcache/ehcache/srcs/ehcache-2.10.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sf/ehcache/ehcache/2.10.4/ehcache-2.10.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-cache_2.11">
+			<revision name="2.6.5" status="release" pubdate="20170915033353" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="39">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3420" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-cache_2.11/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.11/2.6.5/play-cache_2.11-2.6.5.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-cache_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="13838" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-cache_2.11/srcs/play-cache_2.11-2.6.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-cache_2.11/2.6.5/play-cache_2.11-2.6.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.usc" name="jdbcdslog">
+			<revision name="1.0.6.2" status="release" pubdate="20111225121305" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/jdbcdslog-exp/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="Apache License,Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4051" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.googlecode.usc/jdbcdslog/ivy-1.0.6.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/googlecode/usc/jdbcdslog/1.0.6.2/jdbcdslog-1.0.6.2.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.0.6.2" rev-constraint-default="1.0.6.2" rev-constraint-dynamic="1.0.6.2" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jdbcdslog" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="19176" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.googlecode.usc/jdbcdslog/srcs/jdbcdslog-1.0.6.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/googlecode/usc/jdbcdslog/1.0.6.2/jdbcdslog-1.0.6.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-akka-http-server_2.11">
+			<revision name="2.6.5" status="release" pubdate="20170915033346" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3277" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-akka-http-server_2.11/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-akka-http-server_2.11/2.6.5/play-akka-http-server_2.11-2.6.5.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-akka-http-server_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="15978" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-akka-http-server_2.11/srcs/play-akka-http-server_2.11-2.6.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-akka-http-server_2.11/2.6.5/play-akka-http-server_2.11-2.6.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-http-core_2.11">
+			<revision name="10.0.10" status="release" pubdate="20170831200712" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="Apache-2.0" url="https://opensource.org/licenses/Apache-2.0"/>
+				<metadata-artifact status="no" details="" size="3571" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.akka/akka-http-core_2.11/ivy-10.0.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.11/10.0.10/akka-http-core_2.11-10.0.10.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="10.0.10" rev-constraint-default="10.0.10" rev-constraint-dynamic="10.0.10" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="akka-http-core_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="392718" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.akka/akka-http-core_2.11/srcs/akka-http-core_2.11-10.0.10-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.11/10.0.10/akka-http-core_2.11-10.0.10-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-parsing_2.11">
+			<revision name="10.0.10" status="release" pubdate="20170831200709" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="49">
+				<license name="Apache-2.0" url="https://opensource.org/licenses/Apache-2.0"/>
+				<metadata-artifact status="no" details="" size="2950" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.akka/akka-parsing_2.11/ivy-10.0.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.11/10.0.10/akka-parsing_2.11-10.0.10.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="10.0.10" rev-constraint-default="10.0.10" rev-constraint-dynamic="10.0.10" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="akka-parsing_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="63824" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.akka/akka-parsing_2.11/srcs/akka-parsing_2.11-10.0.10-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.11/10.0.10/akka-parsing_2.11-10.0.10-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-server_2.11">
+			<revision name="2.6.5" status="release" pubdate="20170915033334" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="5">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3538" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-server_2.11/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-server_2.11/2.6.5/play-server_2.11-2.6.5.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-server_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="37849" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-server_2.11/srcs/play-server_2.11-2.6.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-server_2.11/2.6.5/play-server_2.11-2.6.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play_2.11">
+			<revision name="2.6.5" status="release" pubdate="20170915033537" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="1">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="7610" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play_2.11/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play_2.11/2.6.5/play_2.11-2.6.5.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="460042" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play_2.11/srcs/play_2.11-2.6.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play_2.11/2.6.5/play_2.11-2.6.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11">
+			<revision name="1.0.6" status="release" pubdate="20170502185758" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="57">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2930" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/ivy-1.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.6/scala-parser-combinators_2.11-1.0.6.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.0.6" rev-constraint-default="1.0.6" rev-constraint-dynamic="1.0.6" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-parser-combinators_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="43804" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/srcs/scala-parser-combinators_2.11-1.0.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.6/scala-parser-combinators_2.11-1.0.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.transaction" name="jta">
+			<revision name="1.1" status="release" pubdate="20081028065721" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://java.sun.com/products/jta" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
+				<metadata-artifact status="no" details="" size="2479" time="0" location="/Users/hemant.agrawal/.ivy2/cache/javax.transaction/jta/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/transaction/jta/1.1/jta-1.1.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jta" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="25014" time="0" location="/Users/hemant.agrawal/.ivy2/cache/javax.transaction/jta/srcs/jta-1.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/transaction/jta/1.1/jta-1.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-lang3">
+			<revision name="3.6" status="release" pubdate="20170609151105" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="13392" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.apache.commons/commons-lang3/ivy-3.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="3.6" rev-constraint-default="3.6" rev-constraint-dynamic="3.6" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-lang3" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="543262" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.apache.commons/commons-lang3/srcs/commons-lang3-3.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.6/commons-lang3-3.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.jsonwebtoken" name="jjwt">
+			<revision name="0.7.0" status="release" pubdate="20160913060832" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="5618" time="0" location="/Users/hemant.agrawal/.ivy2/cache/io.jsonwebtoken/jjwt/ivy-0.7.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/jsonwebtoken/jjwt/0.7.0/jjwt-0.7.0.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jjwt" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="110342" time="0" location="/Users/hemant.agrawal/.ivy2/cache/io.jsonwebtoken/jjwt/srcs/jjwt-0.7.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/jsonwebtoken/jjwt/0.7.0/jjwt-0.7.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="22.0" status="release" pubdate="20170523001957" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7244" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.google.guava/guava/ivy-22.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/22.0/guava-22.0.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="22.0" rev-constraint-default="22.0" rev-constraint-dynamic="22.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="guava" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1527071" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.google.guava/guava/srcs/guava-22.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/22.0/guava-22.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.mojo" name="animal-sniffer-annotations">
+			<revision name="1.14" status="release" pubdate="20150225222330" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="MIT license" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="4565" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.codehaus.mojo/animal-sniffer-annotations/ivy-1.14.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.14" rev-constraint-default="1.14" rev-constraint-dynamic="1.14" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="animal-sniffer-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1862" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.codehaus.mojo/animal-sniffer-annotations/srcs/animal-sniffer-annotations-1.14-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.j2objc" name="j2objc-annotations">
+			<revision name="1.1" status="release" pubdate="20170119043659" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/google/j2objc/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3174" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.google.j2objc/j2objc-annotations/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="j2objc-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="10481" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.google.j2objc/j2objc-annotations/srcs/j2objc-annotations-1.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.errorprone" name="error_prone_annotations">
+			<revision name="2.0.18" status="release" pubdate="20170301090423" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="56">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4020" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.google.errorprone/error_prone_annotations/ivy-2.0.18.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.0.18" rev-constraint-default="2.0.18" rev-constraint-dynamic="2.0.18" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="error_prone_annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="22892" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.google.errorprone/error_prone_annotations/srcs/error_prone_annotations-2.0.18-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-json_2.11">
+			<revision name="2.6.5" status="release" pubdate="20170915012837" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-json" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="71">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4852" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-json_2.11/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.11/2.6.5/play-json_2.11-2.6.5.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-json_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="47278" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-json_2.11/srcs/play-json_2.11-2.6.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-json_2.11/2.6.5/play-json_2.11-2.6.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.9.9" status="release" pubdate="20170323190313" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-time/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6647" time="0" location="/Users/hemant.agrawal/.ivy2/cache/joda-time/joda-time/ivy-2.9.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.9.9" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="joda-time" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="778815" time="0" location="/Users/hemant.agrawal/.ivy2/cache/joda-time/joda-time/srcs/joda-time-2.9.9-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="macro-compat_2.11">
+			<revision name="1.1.1" status="release" pubdate="20160215162037" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/macro-compat" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2964" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.typelevel/macro-compat_2.11/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/macro-compat_2.11/1.1.1/macro-compat_2.11-1.1.1.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="macro-compat_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1052" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.typelevel/macro-compat_2.11/srcs/macro-compat_2.11-1.1.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/macro-compat_2.11/1.1.1/macro-compat_2.11-1.1.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.11.7" status="release" pubdate="20150623014746" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.7/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2825" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.11.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.7/scala-reflect-2.11.7.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="1.0-SNAPSHOT" extra-info.apiURL="http://www.scala-lang.org/api/2.11.7/"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="561516" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.11.7-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.7/scala-reflect-2.11.7-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.7" status="release" pubdate="20150623014702" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.7/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="20">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="1.0-SNAPSHOT" extra-info.apiURL="http://www.scala-lang.org/api/2.11.7/"/>
+				<artifacts>
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="908307" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-functional_2.11">
+			<revision name="2.6.5" status="release" pubdate="20170915012804" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-json" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="50">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2686" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-functional_2.11/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.11/2.6.5/play-functional_2.11-2.6.5.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-functional_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="9836" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-functional_2.11/srcs/play-functional_2.11-2.6.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-functional_2.11/2.6.5/play-functional_2.11-2.6.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.10" status="release" pubdate="20141106194535" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-codec/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="44">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="10608" time="0" location="/Users/hemant.agrawal/.ivy2/cache/commons-codec/commons-codec/ivy-1.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.10" rev-constraint-default="1.10" rev-constraint-dynamic="1.10" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-codec" type="jar" ext="jar" extra-classifier="" status="no" details="" size="284184" time="0" location="/Users/hemant.agrawal/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jsr310">
+			<revision name="2.8.10" status="release" pubdate="20170824101149" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="21275" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/ivy-2.8.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.8.10/jackson-datatype-jsr310-2.8.10.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.8.10" rev-constraint-default="2.8.10" rev-constraint-dynamic="2.8.10" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jackson-datatype-jsr310" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="62124" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/srcs/jackson-datatype-jsr310-2.8.10-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.8.10/jackson-datatype-jsr310-2.8.10-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.datatype" name="jackson-datatype-jdk8">
+			<revision name="2.8.10" status="release" pubdate="20170824101130" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="66">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="20981" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/ivy-2.8.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.8.10/jackson-datatype-jdk8-2.8.10.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.8.10" rev-constraint-default="2.8.10" rev-constraint-dynamic="2.8.10" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jackson-datatype-jdk8" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="20302" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/srcs/jackson-datatype-jdk8-2.8.10-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.8.10/jackson-datatype-jdk8-2.8.10-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.8.10" status="release" pubdate="20170824095804" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8158" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.8.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.10/jackson-databind-2.8.10.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.8.10" rev-constraint-default="2.8.10" rev-constraint-dynamic="2.8.10" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jackson-databind" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="925369" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/srcs/jackson-databind-2.8.10-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.10/jackson-databind-2.8.10-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.8.10" status="release" pubdate="20170824095308" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="65">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6970" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.8.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.10/jackson-annotations-2.8.10.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.8.10" rev-constraint-default="2.8.10" rev-constraint-dynamic="2.8.10" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jackson-annotations" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="57660" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/srcs/jackson-annotations-2.8.10-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.10/jackson-annotations-2.8.10-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.8.10" status="release" pubdate="20170824095449" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="58">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7424" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.8.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.10/jackson-core-2.8.10.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.8.10" rev-constraint-default="2.8.10" rev-constraint-dynamic="2.8.10" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jackson-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="294669" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/srcs/jackson-core-2.8.10-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.10/jackson-core-2.8.10-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-slf4j_2.11">
+			<revision name="2.5.4" status="release" pubdate="20170810183717" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3200" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/ivy-2.5.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.11/2.5.4/akka-slf4j_2.11-2.5.4.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.5.4" rev-constraint-default="2.5.4" rev-constraint-dynamic="2.5.4" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="akka-slf4j_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2488" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/srcs/akka-slf4j_2.11-2.5.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.11/2.5.4/akka-slf4j_2.11-2.5.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="twirl-api_2.11">
+			<revision name="1.3.4" status="release" pubdate="20170809045039" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/twirl" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="64">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2942" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/twirl-api_2.11/ivy-1.3.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.11/1.3.4/twirl-api_2.11-1.3.4.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.3.4" rev-constraint-default="1.3.4" rev-constraint-dynamic="1.3.4" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="twirl-api_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="9386" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/twirl-api_2.11/srcs/twirl-api_2.11-1.3.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.11/1.3.4/twirl-api_2.11-1.3.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.11">
+			<revision name="1.0.6" status="release" pubdate="20160920145614" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3137" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/ivy-1.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.6/scala-xml_2.11-1.0.6.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.0.6" rev-constraint-default="1.0.6" rev-constraint-dynamic="1.0.6" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-xml_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="109202" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/srcs/scala-xml_2.11-1.0.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.6/scala-xml_2.11-1.0.6-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-streams_2.11">
+			<revision name="2.6.5" status="release" pubdate="20170915033242" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="62">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4089" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-streams_2.11/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-streams_2.11/2.6.5/play-streams_2.11-2.6.5.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-streams_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="15355" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-streams_2.11/srcs/play-streams_2.11-2.6.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-streams_2.11/2.6.5/play-streams_2.11-2.6.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-classic">
+			<revision name="1.2.3" status="release" pubdate="20170401005753" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="10412" time="0" location="/Users/hemant.agrawal/.ivy2/cache/ch.qos.logback/logback-classic/ivy-1.2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="logback-classic" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="230201" time="0" location="/Users/hemant.agrawal/.ivy2/cache/ch.qos.logback/logback-classic/srcs/logback-classic-1.2.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-java8-compat_2.11">
+			<revision name="0.8.0" status="release" pubdate="20161030034157" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3036" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/ivy-0.8.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.11/0.8.0/scala-java8-compat_2.11-0.8.0.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="0.8.0" rev-constraint-default="0.8.0" rev-constraint-dynamic="0.8.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-java8-compat_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="63853" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/srcs/scala-java8-compat_2.11-0.8.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.11/0.8.0/scala-java8-compat_2.11-0.8.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.reactivestreams" name="reactive-streams">
+			<revision name="1.0.1" status="release" pubdate="20170809155439" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.reactive-streams.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="61">
+				<license name="CC0" url="http://creativecommons.org/publicdomain/zero/1.0/"/>
+				<metadata-artifact status="no" details="" size="2523" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.reactivestreams/reactive-streams/ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.1/reactive-streams-1.0.1.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="reactive-streams" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3997" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.reactivestreams/reactive-streams/srcs/reactive-streams-1.0.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.1/reactive-streams-1.0.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-netty-utils">
+			<revision name="2.6.5" status="release" pubdate="20170915033128" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2936" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-netty-utils/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-netty-utils/2.6.5/play-netty-utils-2.6.5.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-netty-utils" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="19229" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-netty-utils/srcs/play-netty-utils-2.6.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-netty-utils/2.6.5/play-netty-utils-2.6.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="jcl-over-slf4j">
+			<revision name="1.7.25" status="release" pubdate="20170316220729" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="45">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5273" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jcl-over-slf4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="23239" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.slf4j/jcl-over-slf4j/srcs/jcl-over-slf4j-1.7.25-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="jul-to-slf4j">
+			<revision name="1.7.25" status="release" pubdate="20170316220746" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5260" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.slf4j/jul-to-slf4j/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jul-to-slf4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4872" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.slf4j/jul-to-slf4j/srcs/jul-to-slf4j-1.7.25-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.25" status="release" pubdate="20170316123632" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5188" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="file:////Users/hemant.agrawal/.sbt/preloaded/org.slf4j/slf4j-api/1.7.25/ivys/ivy.xml"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="55539" time="0" location="/Users/hemant.agrawal/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.25-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="build-link">
+			<revision name="2.6.5" status="release" pubdate="20170915033131" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2647" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/build-link/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.6.5/build-link-2.6.5.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="build-link" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4245" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/build-link/srcs/build-link-2.6.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/build-link/2.6.5/build-link-2.6.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-exceptions">
+			<revision name="2.6.5" status="release" pubdate="20170915033123" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://playframework.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="63">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2478" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-exceptions/ivy-2.6.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.6.5/play-exceptions-2.6.5.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-exceptions" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2371" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-exceptions/srcs/play-exceptions-2.6.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-exceptions/2.6.5/play-exceptions-2.6.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-ws-standalone-json_2.11">
+			<revision name="1.1.0" status="release" pubdate="20170913052154" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-ws" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="0">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3999" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-ws-standalone-json_2.11/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone-json_2.11/1.1.0/play-ws-standalone-json_2.11-1.1.0.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-ws-standalone-json_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3761" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-ws-standalone-json_2.11/srcs/play-ws-standalone-json_2.11-1.1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone-json_2.11/1.1.0/play-ws-standalone-json_2.11-1.1.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-ws-standalone_2.11">
+			<revision name="1.1.0" status="release" pubdate="20170913052133" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/playframework/play-ws" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="4117" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-ws-standalone_2.11/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone_2.11/1.1.0/play-ws-standalone_2.11-1.1.0.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-ws-standalone_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="25340" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe.play/play-ws-standalone_2.11/srcs/play-ws-standalone_2.11-1.1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/play/play-ws-standalone_2.11/1.1.0/play-ws-standalone_2.11-1.1.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-core">
+			<revision name="1.2.3" status="release" pubdate="20170401005715" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="67">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="7917" time="0" location="/Users/hemant.agrawal/.ivy2/cache/ch.qos.logback/logback-core/ivy-1.2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="logback-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="399141" time="0" location="/Users/hemant.agrawal/.ivy2/cache/ch.qos.logback/logback-core/srcs/logback-core-1.2.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="ssl-config-core_2.11">
+			<revision name="0.2.2" status="release" pubdate="20170308201333" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/ssl-config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3001" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe/ssl-config-core_2.11/ivy-0.2.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.11/0.2.2/ssl-config-core_2.11-0.2.2.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="0.2.2" rev-constraint-default="0.2.2" rev-constraint-dynamic="0.2.2" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="ssl-config-core_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="49384" time="0" location="/Users/hemant.agrawal/.ivy2/cache/com.typesafe/ssl-config-core_2.11/srcs/ssl-config-core_2.11-0.2.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/ssl-config-core_2.11/0.2.2/ssl-config-core_2.11-0.2.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.inject" name="javax.inject">
+			<revision name="1" status="release" pubdate="20091014050500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="69">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2506" time="0" location="/Users/hemant.agrawal/.ivy2/cache/javax.inject/javax.inject/ivy-1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom"/>
+				<caller organisation="testscala" name="testscala$sources_2.11" conf="compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="javax.inject" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="10928" time="0" location="/Users/hemant.agrawal/.ivy2/cache/javax.inject/javax.inject/srcs/javax.inject-1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
