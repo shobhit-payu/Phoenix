@@ -1,7 +1,12 @@
 package controllers
 
 import javax.inject._
+
+import exception.AuthFailException
 import play.api.mvc._
+
+import scala.concurrent.ExecutionContext.Implicits.global
+
 
 /**
   * This controller creates an `Action` to handle HTTP requests to the
@@ -17,7 +22,8 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
     * a path of `/`.
     */
   def index = Action {
-    Ok("Okay")
+    throw AuthFailException
+    Ok("Test Page")
   }
 
 }

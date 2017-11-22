@@ -1,27 +1,11 @@
-2017-11-20 16:12:37,682 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - application.conf @ file:/Library/WebServer/Documents/scala/payu2.0/Phoenix/payu2.0/target/scala-2.12/classes/application.conf: 43: play.crypto.secret is deprecated, use play.http.secret.key instead
-2017-11-20 16:12:38,328 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-6 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2017-11-21 20:32:19,627 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - application.conf @ file:/Library/WebServer/Documents/scala/payu2.0/Phoenix/payu2.0/target/scala-2.12/classes/application.conf: 43: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-11-21 20:32:20,156 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-11 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2017-11-20 16:12:38,337 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-6 - Application started (Dev)
-2017-11-20 16:12:38,349 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - application.conf @ file:/Library/WebServer/Documents/scala/payu2.0/Phoenix/payu2.0/target/scala-2.12/classes/application.conf: 43: play.crypto.secret is deprecated, use play.http.secret.key instead
-2017-11-20 16:13:06,681 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - application.conf @ file:/Library/WebServer/Documents/scala/payu2.0/Phoenix/payu2.0/target/scala-2.12/classes/application.conf: 43: play.crypto.secret is deprecated, use play.http.secret.key instead
-2017-11-20 16:13:06,847 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-6 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2017-11-20 16:13:06,849 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-6 - Application started (Dev)
-2017-11-20 16:13:06,851 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-6 - application.conf @ file:/Library/WebServer/Documents/scala/payu2.0/Phoenix/payu2.0/target/scala-2.12/classes/application.conf: 43: play.crypto.secret is deprecated, use play.http.secret.key instead
-2017-11-20 16:18:39,942 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-25 - application.conf @ file:/Library/WebServer/Documents/scala/payu2.0/Phoenix/payu2.0/target/scala-2.12/classes/application.conf: 43: play.crypto.secret is deprecated, use play.http.secret.key instead
-2017-11-20 16:18:40,105 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-25 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2017-11-20 16:18:40,106 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-25 - Application started (Dev)
-2017-11-20 16:18:40,110 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-25 - application.conf @ file:/Library/WebServer/Documents/scala/payu2.0/Phoenix/payu2.0/target/scala-2.12/classes/application.conf: 43: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-11-21 20:32:20,162 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-11 - Application started (Dev)
+2017-11-21 20:32:20,168 [WARN] from application in play-dev-mode-akka.actor.default-dispatcher-11 - application.conf @ file:/Library/WebServer/Documents/scala/payu2.0/Phoenix/payu2.0/target/scala-2.12/classes/application.conf: 43: play.crypto.secret is deprecated, use play.http.secret.key instead
+2017-11-21 20:32:20,655 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-11 - Exception occurred, ErrorCode: 2 Message : test exception
+2017-11-21 20:32:20,658 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-11 - Exception occurred, ErrorCode: 2 Message : test exception()
