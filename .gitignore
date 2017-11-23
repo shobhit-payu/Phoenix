@@ -1,0 +1,9 @@
+payu2.0/logs/*
+payu2.0/target/*
+payu2.0/.idea/modules/*
+project/
+target/
+testscala/
+.idea/
+*.iml
+payu2.0/.idea/*
