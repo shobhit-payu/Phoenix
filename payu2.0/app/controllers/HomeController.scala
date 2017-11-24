@@ -2,11 +2,10 @@ package controllers
 
 import javax.inject._
 
-import consts.PaymentRequest
 import exception.AuthFailException
 import play.api.mvc._
 
-import utility.JsonConverter
+import validators.PaymentRequestValidation
 import scala.concurrent.ExecutionContext.Implicits.global
 
 /**
@@ -30,7 +29,7 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
   //accepts json Request
   def index = Action (parse.tolerantJson) { request =>
     val requestString = request.body.toString
-    val JsonRequestObj = JsonConverter.getPaymentRequest(requestString).asInstanceOf[PaymentRequest]
+    PaymentRequestValidation.doValidation(requestString)
     Ok("Got Payment request")
   }
 

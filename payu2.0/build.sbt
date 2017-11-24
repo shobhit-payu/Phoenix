@@ -11,4 +11,3 @@ libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "3.0.0
 libraryDependencies += "com.typesafe.akka" %% "akka-remote" % "2.5.6"
 libraryDependencies += "org.scala-lang.modules" %% "scala-async" % "0.9.6"
 libraryDependencies += "net.liftweb" %% "lift-json" % "3.1.1"
-libraryDependencies += "com.google.code.gson" % "gson" % "2.3.1"
