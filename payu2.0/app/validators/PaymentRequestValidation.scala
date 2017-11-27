@@ -1,7 +1,9 @@
 package validators
 
 import consts.PaymentRequest
-import net.liftweb.json._
+import com.fasterxml.jackson.databind.{DeserializationFeature, ObjectMapper}
+import com.fasterxml.jackson.module.scala.experimental.ScalaObjectMapper
+import com.fasterxml.jackson.module.scala.DefaultScalaModule
 
 /**
   * Created by pragya.mishra on 11/24/17.
@@ -9,11 +11,9 @@ import net.liftweb.json._
 
 object PaymentRequestValidation {
 
-  implicit  val formats = DefaultFormats
-
-  def doValidation(request : String): Unit = {
+  def doValidation(request : String): PaymentRequest = {
     // getSanitizedJsonString(request)
-    //getPaymentRequestObject(request).asInstanceOf[PaymentRequest]
+    getPaymentRequestObject(request)
   }
 
   /* sanitize key value : trim and lower case key-value
@@ -21,10 +21,10 @@ object PaymentRequestValidation {
 
   }*/
 
-  //converts Json String to PaymentRequest case object
-  def getPaymentRequestObject(request : String): Any= {
-    val json = parse(request)
-    json.extract[PaymentRequest]
+  def getPaymentRequestObject(request : String): PaymentRequest= {
+    val objectMapper = new ObjectMapper() with ScalaObjectMapper
+    objectMapper.registerModule(DefaultScalaModule)
+    objectMapper.readValue[PaymentRequest](request)
   }
 
 }
