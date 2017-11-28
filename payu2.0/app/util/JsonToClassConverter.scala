@@ -20,7 +20,7 @@ object JsonToClassConverter {
     objectMapper.writeValueAsString(sanitizedMap)
   }
 
-  //cast sanitized Json String to PaymentRequest Object
+  //cast sanitized Json String to Object
   def getObject(request : String, cc : Class[_]): Any = {
     objectMapper.readValue(request, cc)
   }
