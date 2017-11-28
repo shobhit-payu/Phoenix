@@ -26,7 +26,10 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
     Ok("Test Page")
   }
 
-  //accepts json Request
+  /**
+    * End point that accepts POST json (payment request) from merchant
+    * @return OK
+    */
   def index = Action (parse.tolerantJson) { request =>
     val requestString = request.body.toString
     PaymentRequestValidation.doValidation(requestString)
