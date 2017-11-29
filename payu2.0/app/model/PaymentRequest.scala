@@ -1,4 +1,4 @@
-package consts
+package model
 
 import com.fasterxml.jackson.annotation.JsonProperty
 
@@ -88,5 +88,3 @@ case class PaymentRequest (
     @JsonProperty var hash : String
     ) {
 }
-
-

@@ -1,6 +1,6 @@
 package validators
 
-import consts.PaymentRequest
+import model.PaymentRequest
 import util.JsonToClassConverter
 
 /**
@@ -11,6 +11,7 @@ object PaymentRequestValidation {
 
   /**
     * sanitizes and perform validation of request
+ *
     * @param request Payment request (json) from merchant
     */
   def doValidation(request : String): Unit = {
@@ -20,6 +21,7 @@ object PaymentRequestValidation {
 
   /**
     * checks if the request has all the mandatory params
+ *
     * @param paymentRequest Payment request object
     */
   def checkMandatoryParams(paymentRequest: PaymentRequest): Unit = {
