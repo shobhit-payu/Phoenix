@@ -30,8 +30,8 @@
       <file leaf-file-name="HomeController.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+            <state relative-caret-position="192">
+              <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
               <folding>
                 <element signature="e#21#42#0" expanded="true" />
               </folding>
@@ -39,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthFailException.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AuthFailException.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/exception/AuthFailException.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+              <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -52,8 +52,8 @@
       <file leaf-file-name="AppException.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/exception/AppException.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            <state relative-caret-position="45">
+              <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -62,7 +62,7 @@
       <file leaf-file-name="application.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/application.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3493">
+            <state relative-caret-position="1740">
               <caret line="116" column="44" lean-forward="false" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
               <folding />
             </state>
@@ -72,8 +72,8 @@
       <file leaf-file-name="PayuErrorHandler.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/exception/PayuErrorHandler.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="56" column="52" lean-forward="false" selection-start-line="56" selection-start-column="52" selection-end-line="56" selection-end-column="52" />
+            <state relative-caret-position="120">
+              <caret line="44" column="72" lean-forward="false" selection-start-line="44" selection-start-column="72" selection-end-line="44" selection-end-column="81" />
               <folding>
                 <element signature="e#19#48#0" expanded="true" />
               </folding>
@@ -84,7 +84,7 @@
       <file leaf-file-name="LoggerConst.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/consts/LoggerConst.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
+            <state relative-caret-position="420">
               <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
               <folding />
             </state>
@@ -103,7 +103,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PayuConst.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PayuConst.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/consts/PayuConst.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
@@ -116,7 +116,7 @@
       <file leaf-file-name="LoggerMaskingUtil.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/utils/LoggerMaskingUtil.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
+            <state relative-caret-position="210">
               <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
               <folding>
                 <element signature="e#15#56#0" expanded="true" />
@@ -146,6 +146,7 @@
       <find>^</find>
       <find>print</find>
       <find>ccnum</find>
+      <find>Payu exception occurred,</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -181,15 +182,16 @@
         <option value="$PROJECT_DIR$/app/messages/ActorMessage.scala" />
         <option value="$PROJECT_DIR$/app/actors/testActor.scala" />
         <option value="$PROJECT_DIR$/conf/routes" />
-        <option value="$PROJECT_DIR$/app/exception/AuthFailException.scala" />
-        <option value="$PROJECT_DIR$/app/exception/PayuErrorHandler.scala" />
         <option value="$PROJECT_DIR$/app/utils/PayuUtil.scala" />
         <option value="$PROJECT_DIR$/app/consts/LoggerConst.scala" />
         <option value="$PROJECT_DIR$/app/utils/PayuLogger.scala" />
-        <option value="$PROJECT_DIR$/app/controllers/HomeController.scala" />
         <option value="$PROJECT_DIR$/app/consts/PayuConst.scala" />
         <option value="$PROJECT_DIR$/app/consts/Constant.scala" />
         <option value="$PROJECT_DIR$/app/utils/LoggerMaskingUtil.scala" />
+        <option value="$PROJECT_DIR$/app/exception/PayuErrorHandler.scala" />
+        <option value="$PROJECT_DIR$/app/exception/AppException.scala" />
+        <option value="$PROJECT_DIR$/app/exception/AuthFailException.scala" />
+        <option value="$PROJECT_DIR$/app/controllers/HomeController.scala" />
       </list>
     </option>
   </component>
@@ -213,8 +215,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -238,20 +238,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="payu2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="payu2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -376,6 +362,8 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -738,7 +726,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="724" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="724" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -757,8 +745,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28594506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2907916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -771,6 +758,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -948,19 +936,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Global.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Global.scala" />
     <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.play/play_2.12/srcs/play_2.12-2.6.5-sources.jar!/play/api/http/StandardValues.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
           <caret line="199" column="6" lean-forward="false" selection-start-line="199" selection-start-column="6" selection-end-line="199" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -968,10 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
           <caret line="569" column="24" lean-forward="true" selection-start-line="569" selection-start-column="24" selection-end-line="569" selection-end-column="24" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#99#151#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -979,7 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="166" column="7" lean-forward="false" selection-start-line="166" selection-start-column="7" selection-end-line="166" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1035,7 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1043,13 +1017,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/application.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3493">
+        <state relative-caret-position="1740">
           <caret line="116" column="44" lean-forward="false" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
           <folding />
         </state>
@@ -1059,7 +1032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
           <caret line="383" column="46" lean-forward="true" selection-start-line="383" selection-start-column="46" selection-end-line="383" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1075,39 +1047,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/exception/AuthFailException.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/exception/AppException.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/exception/PayuErrorHandler.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="56" column="52" lean-forward="false" selection-start-line="56" selection-start-column="52" selection-end-line="56" selection-end-column="52" />
-          <folding>
-            <element signature="e#19#48#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/utils/LoggerMaskingUtil.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state relative-caret-position="210">
           <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
           <folding>
             <element signature="e#15#56#0" expanded="true" />
@@ -1125,19 +1070,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-          <folding>
-            <element signature="e#21#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/consts/LoggerConst.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
+        <state relative-caret-position="420">
           <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
           <folding />
         </state>
@@ -1147,6 +1082,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/exception/AppException.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/exception/PayuErrorHandler.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="44" column="72" lean-forward="false" selection-start-line="44" selection-start-column="72" selection-end-line="44" selection-end-column="81" />
+          <folding>
+            <element signature="e#19#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding>
+            <element signature="e#21#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/exception/AuthFailException.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
           <folding />
         </state>
       </provider>
