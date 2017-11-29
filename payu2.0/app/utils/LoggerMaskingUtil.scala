@@ -1,29 +1,31 @@
 package utils
 
 import java.util.regex.{Matcher, Pattern}
+
 import scala.util.control.Breaks._
-import consts._
+import consts.{PayuConst, LoggerConst}
 
 /**
   * Created by hemant.agrawal on 22/11/17.
+  * This object is for mask logging message
   */
 object LoggerMaskingUtil {
 
   def doAllMaskingBeforeLogging(message : String) : String = {
-    var maskMessage = ""
+    var maskMessage = PayuConst.STRING_INITIALIZER
 
     maskMessage = maskCardBeforeLogging(message)
     maskMessage = maskCVVBeforeLogging(maskMessage)
     maskMessage = maskExpiryMonthBeforeLogging(maskMessage)
-    maskMessage  = maskExpiryYearBeforeLogging(maskMessage)
+    maskMessage = maskExpiryYearBeforeLogging(maskMessage)
     maskMessage = maskEmail(maskMessage)
 
-    maskMessage
+    return maskMessage
   }
 
   def maskCardBeforeLogging(message : String) : String = {
-    var ccnum = ""
-    var maskedCard = ""
+    var ccnum = PayuConst.STRING_INITIALIZER
+    var maskedCard = PayuConst.STRING_INITIALIZER
     var maskedMessage = message
     var maskDone : Boolean = false
     breakable {
@@ -32,7 +34,7 @@ object LoggerMaskingUtil {
         val matcher: Matcher = pattern.matcher(message)
         while (matcher.find()) {
           ccnum = message.substring(matcher.start(), matcher.end())
-          maskedCard = ccnum.substring(0, 4) + card + ccnum.substring(ccnum.length - 4, ccnum.length)
+          maskedCard = ccnum.substring(0, 4) + card + ccnum.substring(ccnum.length - 4, ccnum.length) + "(" + ccnum.length + ")"
           maskedMessage = message.replaceAll(regex, maskedCard)
           maskDone = true
         }
@@ -41,10 +43,10 @@ object LoggerMaskingUtil {
         }
       }
     }
-    maskedMessage
+    return maskedMessage
   }
 
-  def maskCVVBeforeLogging(message : String) = {
+  def maskCVVBeforeLogging(message : String) : String = {
     var maskedMessage = message
     var maskDone : Boolean = false
     breakable {
@@ -60,7 +62,7 @@ object LoggerMaskingUtil {
         }
       }
     }
-    maskedMessage
+    return maskedMessage
 
   }
 
@@ -80,7 +82,7 @@ object LoggerMaskingUtil {
         }
       }
     }
-    maskedMessage
+    return maskedMessage
 
   }
 
@@ -100,7 +102,7 @@ object LoggerMaskingUtil {
         }
       }
     }
-    maskedMessage
+    return maskedMessage
 
   }
 
@@ -111,6 +113,6 @@ object LoggerMaskingUtil {
     while(regexMatcher.find()) {
       maskedMessage = regexMatcher.replaceAll(LoggerConst.EMAIL_REPLACE_STRING)
     }
-    maskedMessage
+    return maskedMessage
   }
 }

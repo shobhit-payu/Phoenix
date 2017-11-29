@@ -24,7 +24,7 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
     * a path of `/`.
     */
   def index = Action {
-    PayuLogger.log("hemant@gmail.com 4386280006271757 hemant@gmail.com ",LoggerConst.INFO,true)
+    PayuLogger.log("cv:123 4386280006271757 hemant@gmail.com ",LoggerConst.INFO,true)
     //throw AuthFailException
     Ok("Test Page")
   }
