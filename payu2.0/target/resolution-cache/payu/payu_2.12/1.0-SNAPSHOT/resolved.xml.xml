@@ -4,7 +4,7 @@
 		module="payu_2.12"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20171121115547"
+		publication="20171128165942"
 	>
 		<description>
 		payu

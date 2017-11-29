@@ -2,8 +2,10 @@ package controllers
 
 import javax.inject._
 
+import consts.LoggerConst
 import exception.AuthFailException
 import play.api.mvc._
+import utils.PayuLogger
 
 import scala.concurrent.ExecutionContext.Implicits.global
 
@@ -22,7 +24,8 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
     * a path of `/`.
     */
   def index = Action {
-    throw AuthFailException
+    PayuLogger.log("hemant@gmail.com 4386280006271757 hemant@gmail.com ",LoggerConst.INFO,true)
+    //throw AuthFailException
     Ok("Test Page")
   }
 

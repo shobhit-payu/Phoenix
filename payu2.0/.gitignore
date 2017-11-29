@@ -1,0 +1,23 @@
+user/*
+tags
+genTags.sh
+workbench.xmi
+# ignore these files from git scm
+
+# general ignored files
+*~
+.vscode
+.project
+.buildpath
+web/panel/build/node_modules/*
+.settings/*
+*.swp
+.DS_Store
+.idea/*
+Thumbs.db
+# ignore cache in wurfl
+lib/WURFL/resources/storage/*
+# project specific files to ignore
+logs/*
+nbproject/*
+*.diff

@@ -54,7 +54,7 @@ class PayuErrorHandler extends HttpErrorHandler {
         )
       }
       case _ => {
-        Logger.error("Exception occurred "  + exception.getMessage())
+        Logger.error("Unhandled exception occurred - "  + exception.getMessage())
         exception.printStackTrace()
         Future.successful(
           InternalServerError(views.html.Errors.onError(exception))
