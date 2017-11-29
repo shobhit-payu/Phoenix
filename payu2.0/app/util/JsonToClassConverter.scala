@@ -21,7 +21,10 @@ object JsonToClassConverter {
     */
   def getSanitizedJsonString(request : String) : String = {
     val requestMap : Map[String,String] = objectMapper.readValue[Map[String, String]](request)
-    val sanitizedMap = requestMap.map { case (key, value) => key.trim.toLowerCase -> value.trim }
+    val sanitizedMap = requestMap.map {
+      case (key, value) =>  if (value contains("javascript")) key.trim.toLowerCase -> "unacceptableRequestParam"  //todo : move this to some constant
+                            else key.trim.toLowerCase -> value.trim
+      }
     objectMapper.writeValueAsString(sanitizedMap)
   }
 
