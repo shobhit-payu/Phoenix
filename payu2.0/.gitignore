@@ -9,14 +9,13 @@ workbench.xmi
 .vscode
 .project
 .buildpath
-web/panel/build/node_modules/*
 .settings/*
 *.swp
 .DS_Store
 .idea/*
 Thumbs.db
-# ignore cache in wurfl
 lib/WURFL/resources/storage/*
+
 # project specific files to ignore
 logs/*
 target/*
