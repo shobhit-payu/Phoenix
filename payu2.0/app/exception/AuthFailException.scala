@@ -2,9 +2,9 @@ package exception
 
 import play.api.Logger
 
-object AuthFailException extends AppException {
-  val errorCode = 2
-  val message = "test exception"
 
-  Logger.error("Exception occurred, ErrorCode: " + errorCode + " Message : " + message)
+case class AuthFailException(errorCode : Int, message: String) extends AppException {
+}
+
+case class PaymentFlowException (errorCode : String, message: String) extends AppException {
 }

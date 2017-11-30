@@ -1,7 +1,9 @@
 package validators
 
+import consts.PayuException
+import exception.PaymentFlowException
 import model.PaymentRequest
-import util.JsonToClassConverter
+import utils.JsonToClassConverter
 
 /**
   * Created by pragya.mishra on 11/24/17.
@@ -24,6 +26,7 @@ object PaymentRequestValidation {
 
   /**
     * Urlencode the urls
+    *
     * @param paymentRequest
     */
   def sanitizeUrls(paymentRequest: PaymentRequest) : Unit = {
@@ -107,7 +110,7 @@ object PaymentRequestValidation {
     */
   def validateTransaction ( paymentRequest: PaymentRequest ) : Unit = {
     if (paymentRequest.key.isEmpty) {
-      //throw MERCHANT_KEY_MISSING exception
+      throw new PaymentFlowException(PayuException.MISSING_MERCHANT_KEY.exceptionCode,PayuException.MISSING_MERCHANT_KEY.exceptionMessage )
     }
     /*
     //if merchant key missing throw an exception
