@@ -1,4 +1,0 @@
-[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/Library/WebServer/Documents/scala/payu2.0/Phoenix/payu2.0/conf/application.conf,/Library/WebServer/Documents/scala/payu2.0/Phoenix/payu2.0/target/scala-2.12/classes/application.conf)[0m
-[0m[[0mdebug[0m] [0m	(/Library/WebServer/Documents/scala/payu2.0/Phoenix/payu2.0/conf/logback.xml,/Library/WebServer/Documents/scala/payu2.0/Phoenix/payu2.0/target/scala-2.12/classes/logback.xml)[0m
-[0m[[0mdebug[0m] [0m	(/Library/WebServer/Documents/scala/payu2.0/Phoenix/payu2.0/conf/routes,/Library/WebServer/Documents/scala/payu2.0/Phoenix/payu2.0/target/scala-2.12/classes/routes)[0m

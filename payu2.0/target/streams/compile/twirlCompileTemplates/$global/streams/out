@@ -1,4 +1,0 @@
-[0m[[31merror[0m] [0m/Library/WebServer/Documents/scala/payu2.0/Phoenix/payu2.0/app/views/welcome.scala.html:164: Expected '}' but found 'EOF'[0m
-[0m[[31merror[0m] [0m</div>[0m
-[0m[[31merror[0m] [0m      ^[0m
-[0m[[31merror[0m] [0m(compile:[31mtwirlCompileTemplates[0m) Twirl compilation failed[0m
