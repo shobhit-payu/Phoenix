@@ -19,5 +19,4 @@ lib/WURFL/resources/storage/*
 # project specific files to ignore
 logs/*
 target/*
-project/*
 *.diff
