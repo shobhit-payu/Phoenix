@@ -18,9 +18,9 @@ import play.api.data._
 object index extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template1[String,play.twirl.api.HtmlFormat.Appendable] {
 
   /*
- * This template takes a single argument, a String containing a
- * message to display.
- */
+* This template takes a single argument, a String containing a
+* message to display.
+*/
   def apply/*5.2*/(message: String):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
@@ -28,11 +28,13 @@ object index extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Html
 
 Seq[Any](format.raw/*5.19*/("""
 
-"""),format.raw/*11.4*/("""
+"""),format.raw/*11.3*/("""
 """),_display_(/*12.2*/main("Welcome to Play")/*12.25*/ {_display_(Seq[Any](format.raw/*12.27*/("""
 
-""")))}),format.raw/*14.2*/("""
-"""))
+"""),format.raw/*17.3*/("""
+"""),_display_(/*18.2*/welcome(message, style = "scala")),format.raw/*18.35*/("""
+
+""")))}))
       }
     }
   }
@@ -48,11 +50,11 @@ Seq[Any](format.raw/*5.19*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Tue Nov 21 20:27:12 IST 2017
+                  DATE: Wed Nov 29 17:56:53 IST 2017
                   SOURCE: /Library/WebServer/Documents/scala/payu2.0/Phoenix/payu2.0/app/views/index.scala.html
-                  HASH: 2f57a3a149e8857af0a1ebb42300d99dbbd0e38e
-                  MATRIX: 818->95|930->112|959->308|987->310|1019->333|1059->335|1092->338
-                  LINES: 24->5|29->5|31->11|32->12|32->12|32->12|34->14
+                  HASH: 8437fab46a260457b0555bdec7c215855aae2236
+                  MATRIX: 815->92|927->109|956->301|984->303|1016->326|1056->328|1085->438|1113->440|1167->473
+                  LINES: 24->5|29->5|31->11|32->12|32->12|32->12|34->17|35->18|35->18
                   -- GENERATED --
               */
           

@@ -26,9 +26,10 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
   def index = Action {
     PayuLogger.log("cv:123 4386280006271757 hemant@gmail.com ",LoggerConst.INFO,true)
     throw new AuthFailException(1,"2")
+    //AuthFailException.
 
     //throw AuthFailException
-    Ok("Test Page")
+    Ok("Done!!")
   }
 
 }
