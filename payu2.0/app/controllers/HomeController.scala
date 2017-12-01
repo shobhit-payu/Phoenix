@@ -25,7 +25,7 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
     */
   def exception = Action {
     PayuLogger.log("cv:123 4386280006271757 hemant@gmail.com ",LoggerConst.INFO,true)
-    throw new AuthFailException(1,"2")
+    throw new AuthFailException("1","2")
 
     //throw AuthFail Exception
     Ok("Test Page")

@@ -3,7 +3,7 @@ package validators
 import consts.PayuException
 import exception.PaymentFlowException
 import model.PaymentRequest
-import utils.JsonToClassConverter
+import utils.{ImplementStrategy, JsonToClassConverter}
 
 /**
   * Created by pragya.mishra on 11/24/17.
@@ -15,11 +15,15 @@ object PaymentRequestValidation {
     * sanitizes and perform validation of request
     *
     * @param request Payment request (json) from merchant
+    * @todo make small different classes for each functions, move generics to utils like validationUtils
     */
   def doValidation(request : String): Unit = {
     val sanitizedRequest = JsonToClassConverter.getSanitizedJsonString(request)
     var paymentRequest = JsonToClassConverter.getObject(sanitizedRequest, classOf[PaymentRequest]).asInstanceOf[PaymentRequest]
-    sanitizeUrls(paymentRequest)
+    //sanitizeUrls(paymentRequest)
+    val merchantParams = List("si_enabled", "s2s_enabled")
+    ImplementStrategy.executeAfterValidation(paymentRequest,merchantParams)
+    ImplementStrategy.executeAfterMaf(paymentRequest,merchantParams)
     //processingForDomesticBin(paymentRequest)
     //checkMandatoryParams(paymentRequest)
   }
@@ -30,6 +34,7 @@ object PaymentRequestValidation {
     * @param paymentRequest
     */
   def sanitizeUrls(paymentRequest: PaymentRequest) : Unit = {
+    //check for null
     val findAmpersand = "&".r
     findAmpersand.replaceAllIn(paymentRequest.furl, "%26")
     findAmpersand.replaceAllIn(paymentRequest.surl, "%26")
