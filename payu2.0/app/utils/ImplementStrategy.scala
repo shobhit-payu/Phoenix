@@ -10,7 +10,7 @@ import consts.FlagToStrategyMappingConst
 
 object ImplementStrategy {
 
-  def execute(callback:(PaymentRequest) => Unit, paymentRequest: PaymentRequest) = callback(paymentRequest)
+  def execute(f:(PaymentRequest) => Unit, paymentRequest: PaymentRequest) = f(paymentRequest)
   //def executeWithString(callback:(PaymentRequest, String) => Unit, paymentRequest: PaymentRequest, str : String) = callback(paymentRequest, str)
 
   def executeAfterValidation(paymentRequest: PaymentRequest, merchantParams : List[String]): Unit = {
