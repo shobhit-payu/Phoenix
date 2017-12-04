@@ -20,7 +20,7 @@ object PaymentRequestValidation {
   def doValidation(request : String): Unit = {
     val sanitizedRequest = JsonToClassConverter.getSanitizedJsonString(request)
     var paymentRequest = JsonToClassConverter.getObject(sanitizedRequest, classOf[PaymentRequest]).asInstanceOf[PaymentRequest]
-    //sanitizeUrls(paymentRequest)
+    sanitizeUrls(paymentRequest)
     val merchantParams = List("si_enabled", "s2s_enabled")
     ImplementStrategy.executeAfterValidation(paymentRequest,merchantParams)
     ImplementStrategy.executeAfterMaf(paymentRequest,merchantParams)
@@ -34,13 +34,22 @@ object PaymentRequestValidation {
     * @param paymentRequest
     */
   def sanitizeUrls(paymentRequest: PaymentRequest) : Unit = {
-    //check for null
     val findAmpersand = "&".r
-    findAmpersand.replaceAllIn(paymentRequest.furl, "%26")
-    findAmpersand.replaceAllIn(paymentRequest.surl, "%26")
-    findAmpersand.replaceAllIn(paymentRequest.curl, "%26")
-    findAmpersand.replaceAllIn(paymentRequest.codurl, "%26")
-    findAmpersand.replaceAllIn(paymentRequest.touturl, "%26")
+    if (paymentRequest.furl !=  null && !paymentRequest.furl.isEmpty()) {
+      paymentRequest.furl = findAmpersand.replaceAllIn(paymentRequest.furl, "%26")
+    }
+    if (paymentRequest.surl !=  null && !paymentRequest.surl.isEmpty()) {
+      paymentRequest.surl = findAmpersand.replaceAllIn(paymentRequest.surl, "%26")
+    }
+    if (paymentRequest.curl !=  null && !paymentRequest.curl.isEmpty()) {
+      paymentRequest.curl = findAmpersand.replaceAllIn(paymentRequest.curl, "%26")
+    }
+    if (paymentRequest.codurl !=  null && !paymentRequest.codurl.isEmpty()) {
+      paymentRequest.codurl = findAmpersand.replaceAllIn(paymentRequest.codurl, "%26")
+    }
+    if (paymentRequest.touturl !=  null && !paymentRequest.touturl.isEmpty()) {
+      paymentRequest.touturl = findAmpersand.replaceAllIn(paymentRequest.touturl, "%26")
+    }
   }
 
   /**
