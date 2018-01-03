@@ -6,7 +6,6 @@ import exception.PaymentFlowException
 import model.PaymentRequest
 import utils.{CaseClassToMapConverter, ImplementStrategy, JsonToClassConverter}
 import service.ConfigService
-import scala.concurrent.ExecutionContext.Implicits.global
 
 /**
   * Created by pragya.mishra on 11/24/17.
@@ -27,11 +26,6 @@ object PaymentRequestValidation {
     val merchantParams = List("si_enabled", "s2s_enabled")
     ImplementStrategy.executeAfterValidation(paymentRequest,merchantParams)
     ImplementStrategy.executeAfterMaf(paymentRequest,merchantParams)
-    /*val res1 = ConfigService.getValueForKey("addIntervalForOdInSec")
-    res1 onComplete {
-      case Success(posts) => for (post <- posts) println(post)
-      case Failure(t) => println("An error has occured: " + t.getMessage)
-    }*/
     //processingForDomesticBin(paymentRequest)
     checkMandatoryParams(paymentRequest)
   }
@@ -83,8 +77,8 @@ object PaymentRequestValidation {
     * @param paymentRequest Payment request object
     */
   def checkMandatoryParams(paymentRequest: PaymentRequest) : Unit = {
-    //val mandatoryParams : String = ConfigService.getValueForKey("merc_mand_vars")
-    val mandatoryParams  = "key|txnid|amount|productinfo|surl|hash"
+    val mandatoryParams : String = ConfigService.getValueForKey("merc_mand_vars")
+    //val mandatoryParams  = "key|txnid|amount|productinfo|surl|hash"
     val otherMandatoryParams : Array[String] = Array("firstname","email","phone")
     var mandatoryParamsArray : Array[String] = mandatoryParams.split("""\|""")
     mandatoryParamsArray = mandatoryParamsArray ++ otherMandatoryParams
@@ -92,6 +86,7 @@ object PaymentRequestValidation {
     for (mandateKey <- mandatoryParamsArray) {
       val value = paymentRequestMap.get(mandateKey)
       if (value ==  null || value.isEmpty) {
+        //log and throw the exception
         println(mandateKey + " is empty")
       }
     }
