@@ -4,7 +4,7 @@ import scala.util.{Success, Failure}
 import consts.PayuException
 import exception.PaymentFlowException
 import model.PaymentRequest
-import utils.{CaseClassToMapConverter, ImplementStrategy, JsonToClassConverter}
+import utils.{IsNumericString, CaseClassToMapConverter, ImplementStrategy, JsonToClassConverter}
 import service.ConfigService
 
 /**
@@ -28,6 +28,7 @@ object PaymentRequestValidation {
     ImplementStrategy.executeAfterMaf(paymentRequest,merchantParams)
     //processingForDomesticBin(paymentRequest)
     checkMandatoryParams(paymentRequest)
+    //validateTransaction(paymentRequest)
   }
 
   /**
@@ -78,7 +79,6 @@ object PaymentRequestValidation {
     */
   def checkMandatoryParams(paymentRequest: PaymentRequest) : Unit = {
     val mandatoryParams : String = ConfigService.getValueForKey("merc_mand_vars")
-    //val mandatoryParams  = "key|txnid|amount|productinfo|surl|hash"
     val otherMandatoryParams : Array[String] = Array("firstname","email","phone")
     var mandatoryParamsArray : Array[String] = mandatoryParams.split("""\|""")
     mandatoryParamsArray = mandatoryParamsArray ++ otherMandatoryParams
@@ -86,52 +86,13 @@ object PaymentRequestValidation {
     for (mandateKey <- mandatoryParamsArray) {
       val value = paymentRequestMap.get(mandateKey)
       if (value ==  null || value.isEmpty) {
-        //log and throw the exception
-        println(mandateKey + " is empty")
+        throw new PaymentFlowException(PayuException.MISSING_MANDATORY_PARAMETERS.exceptionCode,PayuException.MISSING_MANDATORY_PARAMETERS.exceptionMessage)
       }
     }
-    //$mendatoryParams = ConfigBase::get("merc_mand_vars");               //key|txnid|amount|productinfo|surl|hash
-    /*$mendatoryParams = explode('|', $mendatoryParams);
-    $otherMandParams = array('firstname','email','phone');
-    $mendatoryParams = array_merge($mendatoryParams, $otherMandParams);
-    $build  = ConfigBase::get('build');
-    $checkMan = false;
-    $payuId = $this->getRequestParam( 'payuId', null );
-    $txnId  = $this->getRequestParam( "txnid", null );
-    $this->cleanManRequestParams();
-    $amount= $this->getManRequestParam( "amount", null );
-
-    $base_payuid = $this->getRequestParam( "base_payuid", null );
-    $base_merchantid = $this->getRequestParam( "base_merchantid", null );
-
-    // If id generator flag is Active : Check if the received PayuId already exists or is a new transcation.
-    if ( ConfigBase::get( "id_gen_flag" ) && ! $payuId ) {
-      $error = new payuExceptionError(payuExceptionError::MANDATORY_PARAMETER_PAYUID_MISSING, payuExceptionError::PAYMENT_FLOW_EXCEPTION, __CLASS__, __FUNCTION__);
-      $error->execute();
-      //throw new PaymentFlowException( "Mandatory parameter payuId missing." );
+    if (!IsNumericString.check(paymentRequest.amount)) {
+      throw new PaymentFlowException(PayuException.INVALID_AMOUNT.exceptionCode,PayuException.INVALID_AMOUNT.exceptionMessage)
     }
-    // check if txnID and other mandatory params are empty then throw a merchant integration exception
-    $eMsg = "";
-    if ($build == 'Production'){
-    $checkMan = empty($txnId) || !is_numeric($amount) ;
   }
-    else {
-    list($checkMan, $eMsg) = $this->testTransaction($mendatoryParams, $eMsg);
-  }
-
-    if ( !is_numeric($amount) ) {
-      $error = new payuExceptionError(payuExceptionError::INVALID_AMOUNT, payuExceptionError::MERCHANT_INTEGRATION_EXCEPTION, __CLASS__, __FUNCTION__,array($eMsg));
-      $error->execute();
-      //throw new MerchantIntegrationException( "Mandatory parameter txnId missing for .".$decoded_mihpayid );
-    }
-
-    if ( $checkMan ) {
-      $error = new payuExceptionError(payuExceptionError::MANDATORY_PARAMETER_TXNID_MISSING, payuExceptionError::MERCHANT_INTEGRATION_EXCEPTION, __CLASS__, __FUNCTION__,array($eMsg));
-      $error->execute();
-      //throw new MerchantIntegrationException( "Mandatory parameter txnId missing for .".$decoded_mihpayid );
-    }
-    moneyUtility::checkBasePayuidMerchantId($base_payuid, $base_merchantid);
-  */}
 
   /**
     *

@@ -17,17 +17,17 @@ class PayuErrorHandler extends HttpErrorHandler {
     statusCode match {
       case play.api.http.Status.NOT_FOUND => {
         Future.successful(
-          NotFound(views.html.Errors.onHandlerNotFound(request))
+          NotFound(views.html.errors.onHandlerNotFound(request))
         )
       }
       case play.api.http.Status.BAD_REQUEST => {
         Future.successful(
-          NotFound(views.html.Errors.onHandlerNotFound(request))
+          NotFound(views.html.errors.onHandlerNotFound(request))
         )
       }
       case play.api.http.Status.BAD_GATEWAY => {
         Future.successful(
-          NotFound(views.html.Errors.onHandlerNotFound(request))
+          NotFound(views.html.errors.onHandlerNotFound(request))
         )
       }
       case _ => {
@@ -57,7 +57,7 @@ class PayuErrorHandler extends HttpErrorHandler {
         Logger.error("Exception occurred "  + exception.getMessage())
         exception.printStackTrace()
         Future.successful(
-          InternalServerError(views.html.Errors.onError(exception))
+          InternalServerError(views.html.errors.onError(exception))
         )
       }
     }
