@@ -27,8 +27,9 @@ object PaymentRequestValidation {
     ImplementStrategy.executeAfterValidation(paymentRequest,merchantParams)
     ImplementStrategy.executeAfterMaf(paymentRequest,merchantParams)
     //processingForDomesticBin(paymentRequest)
-    checkMandatoryParams(paymentRequest)
+    //checkMandatoryParams(paymentRequest)
     //validateTransaction(paymentRequest)
+    ValidateChecksum.validateCheckSum(paymentRequest)
   }
 
   /**
@@ -92,7 +93,14 @@ object PaymentRequestValidation {
     if (!IsNumericString.check(paymentRequest.amount)) {
       throw new PaymentFlowException(PayuException.INVALID_AMOUNT.exceptionCode,PayuException.INVALID_AMOUNT.exceptionMessage)
     }
+    if (!IsNumericString.check(paymentRequest.phone)) {
+      throw new PaymentFlowException(PayuException.INVALID_PHONE.exceptionCode,PayuException.INVALID_PHONE.exceptionMessage)
+    }
+    if (!paymentRequest.email.contains("@")) {
+      throw new PaymentFlowException(PayuException.INVALID_EMAIL.exceptionCode,PayuException.INVALID_EMAIL.exceptionMessage)
+    }
   }
+
 
   /**
     *
@@ -102,13 +110,7 @@ object PaymentRequestValidation {
     if (paymentRequest.key.isEmpty) {
       throw new PaymentFlowException(PayuException.MISSING_MERCHANT_KEY.exceptionCode,PayuException.MISSING_MERCHANT_KEY.exceptionMessage )
     }
-    /*
-    //if merchant key missing throw an exception
-    if ( ! isset( $this->merc_vars['key'] ) ) {
-    $error = new payuExceptionError(payuExceptionError::MERCHANT_KEY_MISSING, payuExceptionError::MERCHANT_INTEGRATION_EXCEPTION, __CLASS__, __FUNCTION__);
-    $error->execute();
-    //throw new MerchantIntegrationException( 'Merchant key missing in Request' );
-  }
+      /*
     // service provider is payu paisa then create a vendor and
     // go to the paisa login page as long as check sum is validated
     else if ( isset( $this->merc_vars['service_provider'] ) && ($this->merc_vars['service_provider'] == "payu_paisa") ) {

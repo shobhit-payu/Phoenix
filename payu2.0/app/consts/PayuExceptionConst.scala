@@ -22,4 +22,20 @@ object PayuException {
     val exceptionCode = "EX002"
     val exceptionMessage = "Invalid amount in the payment request"
   }
+
+  case object INVALID_PHONE extends PayuException {
+    val exceptionCode = "EX002"
+    val exceptionMessage = "Invalid phone in the payment request"
+  }
+
+  case object INVALID_EMAIL extends PayuException {
+    val exceptionCode = "EX003"
+    val exceptionMessage = "Invalid email in the payment request"
+  }
+
+  case object CHECKSUM_FALIED extends PayuException {
+    val exceptionCode = "EX004"
+    val exceptionMessage = "Checksum Failed"
+  }
+
 }
