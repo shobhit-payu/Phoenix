@@ -14,10 +14,9 @@ import org.bouncycastle.crypto.params._
 
 class EncryptionUtil(keyBase64: String) {
   private val keyBytes = Base64.decodeBase64(keyBase64)
-  private val ivBytes = keyBytes
-  //val random : SecureRandom = SecureRandom.getInstance("SHA1PRNG")
-  //println("Random  "+random)
-  //random.nextBytes(ivBytes)
+  private var ivBytes = new Array[Byte](256)
+  val random : SecureRandom = SecureRandom.getInstance("SHA1PRNG")
+  random.nextBytes(ivBytes)
 
 
   def encrypt(message: String): String = {

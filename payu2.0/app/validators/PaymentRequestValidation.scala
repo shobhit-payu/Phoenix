@@ -111,29 +111,6 @@ object PaymentRequestValidation {
       throw new PaymentFlowException(PayuException.MISSING_MERCHANT_KEY.exceptionCode,PayuException.MISSING_MERCHANT_KEY.exceptionMessage )
     }
       /*
-    // service provider is payu paisa then create a vendor and
-    // go to the paisa login page as long as check sum is validated
-    else if ( isset( $this->merc_vars['service_provider'] ) && ($this->merc_vars['service_provider'] == "payu_paisa") ) {
-    $vendor = new Vendor( null, $this->merc_vars['key'], $this->merc_vars['service_provider'] );
-    $isValid = $vendor->validateCheckSum( $this->merc_vars );
-    if($isValid === false) {
-      $error = new payuExceptionError(payuExceptionError::PAYU_PAISA_ADDPAYMENT_URL_FAILED, payuExceptionError::EXCEPTION, __CLASS__, __FUNCTION__);
-      $error->execute();
-      //throw new Exception('Add Payment Call to payu_paisa_addpayment_url failed.');
-    }
-  }
-    // case when the merchant key is there and the service provider is not paisa then
-    else if ( !empty($this->merc_vars['vendor_id']) && isset( $this->merc_vars['service_provider'] ) &&
-    !empty($this->merc_vars['service_provider']) &&
-    $this->merc_vars['service_provider'] == 'payumoney_s2s' )
-    {
-      Logger::log('Calculating the checksum using vendor key and salt for vendor ID ' . $this->merc_vars['vendor_id'], 'INFO', 'PAISA S2S Flow',0,false);
-      $vendor = new Vendor($this->merc_vars['vendor_id']);
-      $isValid = $vendor->validateCheckSum( $this->merc_vars, false );
-
-      //overriding the `key` as merchant Key after mapping from vendor table
-      $vendorId = $this->merc_vars['vendor_id'];
-      $actualMerchantKey = PayuUtil::getMerchantKeyfromVendor($vendorId);
 
       //overriding the key
       Logger::log('Merchant Key for vendor Id ' . $vendorId  . ' is ' . $actualMerchantKey, 'INFO', 'INFO',0,false);
@@ -165,7 +142,8 @@ object PaymentRequestValidation {
     // validate the checksum
     $isValid = $this->merchant->validateCheckSum( $this->merc_vars );
 
-  }
+ }
+
 
     $this->merc_vars['saltUsed'] = $this->merchant->saltUsed;
 
