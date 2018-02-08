@@ -1,9 +1,9 @@
 package validators
 
+import cache.ConfigCache
 import consts.{HashAlgo, PayuException}
 import exception.PaymentFlowException
 import model.PaymentRequest
-import service.ConfigService
 import utils.{HashGenerator, CaseClassToMapConverter, MerchantUtil}
 
 /**
@@ -20,7 +20,7 @@ object ValidateChecksum {
   }
 
   def getMerchantCheckSum(paymentRequest: PaymentRequest): Unit = {
-    val mercHashVarsSeq = ConfigService.getValueForKey("merc_hash_vars_seq")
+    val mercHashVarsSeq = ConfigCache.doGet("merc_hash_vars_seq")
     val mercHashVarsArray : Array[String] = mercHashVarsSeq.split("""\|""")
     val paymentRequestMap = CaseClassToMapConverter.getMap(paymentRequest)
     var mercHashVarsString : String = null

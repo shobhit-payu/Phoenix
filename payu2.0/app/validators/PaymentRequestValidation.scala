@@ -1,11 +1,12 @@
 package validators
 
+import cache.ConfigCache
+
 import scala.util.{Success, Failure}
 import consts.PayuException
 import exception.PaymentFlowException
 import model.PaymentRequest
-import utils.{IsNumericString, CaseClassToMapConverter, ImplementStrategy, JsonToClassConverter}
-import service.ConfigService
+import utils._
 
 /**
   * Created by pragya.mishra on 11/24/17.
@@ -23,13 +24,12 @@ object PaymentRequestValidation {
     val sanitizedRequest = JsonToClassConverter.getSanitizedJsonString(request)
     var paymentRequest = JsonToClassConverter.getObject(sanitizedRequest, classOf[PaymentRequest]).asInstanceOf[PaymentRequest]
     sanitizeUrls(paymentRequest)
-    val merchantParams = List("si_enabled", "s2s_enabled")
-    ImplementStrategy.executeAfterValidation(paymentRequest,merchantParams)
-    ImplementStrategy.executeAfterMaf(paymentRequest,merchantParams)
+    //ImplementStrategy.executeAfterValidation(paymentRequest,merchantParams)
+    //ImplementStrategy.executeAfterMaf(paymentRequest,merchantParams)
     //processingForDomesticBin(paymentRequest)
     //checkMandatoryParams(paymentRequest)
     //validateTransaction(paymentRequest)
-    ValidateChecksum.validateCheckSum(paymentRequest)
+    //ValidateChecksum.validateCheckSum(paymentRequest)
   }
 
   /**
@@ -79,7 +79,7 @@ object PaymentRequestValidation {
     * @param paymentRequest Payment request object
     */
   def checkMandatoryParams(paymentRequest: PaymentRequest) : Unit = {
-    val mandatoryParams : String = ConfigService.getValueForKey("merc_mand_vars")
+    val mandatoryParams : String = ConfigCache.doGet("merc_mand_vars")
     val otherMandatoryParams : Array[String] = Array("firstname","email","phone")
     var mandatoryParamsArray : Array[String] = mandatoryParams.split("""\|""")
     mandatoryParamsArray = mandatoryParamsArray ++ otherMandatoryParams
