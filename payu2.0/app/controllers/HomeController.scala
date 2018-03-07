@@ -5,17 +5,16 @@ import javax.inject._
 import consts.LoggerConst
 import exception.AuthFailException
 import play.api.mvc._
+import service.WSService
 import utils.PayuLogger
-
 import validators.PaymentRequestValidation
-import scala.concurrent.ExecutionContext.Implicits.global
 
 /**
   * This controller creates an `Action` to handle HTTP requests to the
   * application's home page.
   */
 @Singleton
-class HomeController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
+class HomeController @Inject()(cc: ControllerComponents)(wsService: WSService) extends AbstractController(cc) {
 
   /**
     * Create an Action to render an HTML page with a welcome message.
@@ -24,8 +23,8 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
     * a path of `/`.
     */
   def exception = Action {
-    PayuLogger.log("cv:123 4386280006271757 hemant@gmail.com ",LoggerConst.INFO,true)
-    throw new AuthFailException("1","2")
+    PayuLogger.log("cv:123 4386280006271757 hemant@gmail.com ", LoggerConst.INFO, true)
+    throw new AuthFailException("1", "2")
 
     //throw AuthFail Exception
     Ok("Test Page")
@@ -33,12 +32,13 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
 
   /**
     * End point that accepts POST json (payment request) from merchant
- *
+    *
     * @return OK
     */
-  def index = Action (parse.tolerantJson) { request =>
+  def index = Action(parse.tolerantJson) { request =>
     val requestString = request.body.toString
     PaymentRequestValidation.doValidation(requestString)
+    wsService.networkCall("hello")
     Ok("Got Payment request")
   }
 
