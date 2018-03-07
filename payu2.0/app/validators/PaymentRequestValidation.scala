@@ -1,18 +1,20 @@
 package validators
 
-import cache.ConfigCache
+import javax.inject.Singleton
 
-import scala.util.{Success, Failure}
+import cache.ConfigCache
+import com.google.inject.Inject
 import consts.PayuException
 import exception.PaymentFlowException
 import model.PaymentRequest
+import service.WSService
 import utils._
 
 /**
   * Created by pragya.mishra on 11/24/17.
   */
-
-object PaymentRequestValidation {
+@Singleton
+class PaymentRequestValidation @Inject()(wsService : WSService)  {
 
   /**
     * sanitizes and perform validation of request
@@ -24,6 +26,8 @@ object PaymentRequestValidation {
     val sanitizedRequest = JsonToClassConverter.getSanitizedJsonString(request)
     var paymentRequest = JsonToClassConverter.getObject(sanitizedRequest, classOf[PaymentRequest]).asInstanceOf[PaymentRequest]
     sanitizeUrls(paymentRequest)
+//    val application = new GuiceApplicationBuilder().build()
+    wsService.networkCall("hello")
     //ImplementStrategy.executeAfterValidation(paymentRequest,merchantParams)
     //ImplementStrategy.executeAfterMaf(paymentRequest,merchantParams)
     //processingForDomesticBin(paymentRequest)

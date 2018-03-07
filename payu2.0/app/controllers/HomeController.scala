@@ -14,7 +14,7 @@ import validators.PaymentRequestValidation
   * application's home page.
   */
 @Singleton
-class HomeController @Inject()(cc: ControllerComponents)(wsService: WSService) extends AbstractController(cc) {
+class HomeController @Inject()(cc: ControllerComponents)(wsService: WSService)(paymentRequestValidation:PaymentRequestValidation) extends AbstractController(cc) {
 
   /**
     * Create an Action to render an HTML page with a welcome message.
@@ -37,8 +37,11 @@ class HomeController @Inject()(cc: ControllerComponents)(wsService: WSService) e
     */
   def index = Action(parse.tolerantJson) { request =>
     val requestString = request.body.toString
-    PaymentRequestValidation.doValidation(requestString)
-    wsService.networkCall("hello")
+    paymentRequestValidation.doValidation(requestString)
+
+
+
+    //wsService.networkCall("hello")
     Ok("Got Payment request")
   }
 
