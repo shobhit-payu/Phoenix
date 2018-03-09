@@ -26,7 +26,6 @@ class PaymentRequestValidation @Inject()(wsService : WSService)  {
     val sanitizedRequest = JsonToClassConverter.getSanitizedJsonString(request)
     var paymentRequest = JsonToClassConverter.getObject(sanitizedRequest, classOf[PaymentRequest]).asInstanceOf[PaymentRequest]
     sanitizeUrls(paymentRequest)
-//    val application = new GuiceApplicationBuilder().build()
     wsService.networkCall("hello")
     //ImplementStrategy.executeAfterValidation(paymentRequest,merchantParams)
     //ImplementStrategy.executeAfterMaf(paymentRequest,merchantParams)
